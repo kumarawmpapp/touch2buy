@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CollapseView" customModule="Touch2Buy" customModuleProvider="target">
+            <connections>
+                <outlet property="titleText" destination="dxp-lF-RUd" id="MfZ-7K-ie0"/>
+                <outlet property="titleView" destination="Ggj-q1-D19" id="BW3-aP-Wd7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="39"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ggj-q1-D19">
+                    <rect key="frame" x="0.0" y="0.0" width="328" height="39"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxp-lF-RUd">
+                            <rect key="frame" x="8" y="9" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="3du-Fv-LZ4"/>
+                        <constraint firstItem="dxp-lF-RUd" firstAttribute="leading" secondItem="Ggj-q1-D19" secondAttribute="leading" constant="8" id="ISU-9g-GbZ"/>
+                        <constraint firstItem="dxp-lF-RUd" firstAttribute="top" secondItem="Ggj-q1-D19" secondAttribute="top" constant="9" id="dLm-de-45o"/>
+                        <constraint firstAttribute="bottom" secondItem="dxp-lF-RUd" secondAttribute="bottom" constant="9" id="gLm-cj-8dh"/>
+                        <constraint firstItem="dxp-lF-RUd" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Ggj-q1-D19" secondAttribute="trailing" constant="-5" id="pRh-1V-yeh"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="FnW-PI-iCd" appends="YES" id="QK3-eS-FWN"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.62706390580000004" blue="0.55857664389999995" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Ggj-q1-D19" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8tV-fV-Cbn"/>
+                <constraint firstItem="Ggj-q1-D19" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="and-ib-sd4"/>
+                <constraint firstItem="Ggj-q1-D19" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="vmC-Uo-L29"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="299" y="-6.5"/>
+        </view>
+        <tapGestureRecognizer id="FnW-PI-iCd">
+            <connections>
+                <action selector="toggleExpand:" destination="-1" id="Rtu-ja-csb"/>
+                <outlet property="delegate" destination="-1" id="LCZ-gL-wfQ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

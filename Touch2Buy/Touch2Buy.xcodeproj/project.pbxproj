@@ -1,0 +1,1304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17E12945D28C875BE13C3B2D /* Pods_Touch2Buy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCECE07D1E404B9C2191F54 /* Pods_Touch2Buy.framework */; };
+		5265AD6E1C0575F50035BA0D /* BaseRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD6D1C0575F50035BA0D /* BaseRequestResponse.swift */; };
+		5265AD701C057EC50035BA0D /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD6F1C057EC50035BA0D /* UserRequest.swift */; };
+		5265AD721C057EEA0035BA0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD711C057EEA0035BA0D /* User.swift */; };
+		5265AD741C058AB60035BA0D /* UserLoginRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD731C058AB60035BA0D /* UserLoginRequestResponse.swift */; };
+		5265AD791C05B3C20035BA0D /* JSONConvertor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD781C05B3C20035BA0D /* JSONConvertor.swift */; };
+		5265AD7D1C05B9FA0035BA0D /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD7C1C05B9FA0035BA0D /* CreateUserRequest.swift */; };
+		5265AD7F1C061EFE0035BA0D /* AllOrganizationsRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD7E1C061EFE0035BA0D /* AllOrganizationsRequestResponse.swift */; };
+		5265AD811C061FFB0035BA0D /* OrganizationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD801C061FFB0035BA0D /* OrganizationDataManager.swift */; };
+		5265AD831C0620570035BA0D /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5265AD821C0620570035BA0D /* CompaniesViewController.swift */; };
+		5275697D1BEF8C880049C88A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275697C1BEF8C880049C88A /* AppDelegate.swift */; };
+		527569821BEF8C880049C88A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527569801BEF8C880049C88A /* Main.storyboard */; };
+		527569841BEF8C880049C88A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527569831BEF8C880049C88A /* Images.xcassets */; };
+		527569871BEF8C880049C88A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527569851BEF8C880049C88A /* LaunchScreen.xib */; };
+		527569A01BEF94770049C88A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5275699F1BEF94770049C88A /* LoginViewController.swift */; };
+		527569A21BEF96800049C88A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527569A11BEF96800049C88A /* BaseViewController.swift */; };
+		527569AC1BEFB31D0049C88A /* BaseDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527569AA1BEFB31D0049C88A /* BaseDataManager.swift */; };
+		527569AD1BEFB31D0049C88A /* UserDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527569AB1BEFB31D0049C88A /* UserDataManager.swift */; };
+		52D2ACD81C07547700413DBE /* OrganizationItemsRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2ACD71C07547700413DBE /* OrganizationItemsRequestResponse.swift */; };
+		52D2ACDA1C07609300413DBE /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2ACD91C07609300413DBE /* Organization.swift */; };
+		52D2ACDC1C0761DF00413DBE /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D2ACDB1C0761DF00413DBE /* ImageItem.swift */; };
+		6000D6301C80CBF2007DD089 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000D62F1C80CBF2007DD089 /* PurchaseViewController.swift */; };
+		6000D6391C80CE54007DD089 /* PurchaseViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000D6381C80CE54007DD089 /* PurchaseViewController4.swift */; };
+		6000D63B1C80DDB8007DD089 /* PublicDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000D63A1C80DDB8007DD089 /* PublicDataManager.swift */; };
+		6000D63D1C80DE59007DD089 /* PaymentMethodsRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000D63C1C80DE59007DD089 /* PaymentMethodsRequestResponse.swift */; };
+		600484BF1CD77BF90060DE1C /* addItem_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 600484BD1CD77BF90060DE1C /* addItem_active.png */; };
+		600484C01CD77BF90060DE1C /* addItem_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 600484BE1CD77BF90060DE1C /* addItem_disabled.png */; };
+		6007D3851D5A37AF00FEE3EC /* AreasRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007D3841D5A37AF00FEE3EC /* AreasRequestResponse.swift */; };
+		600E11F31C6C8DA50047AC8A /* OrderListRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600E11F21C6C8DA50047AC8A /* OrderListRequestResponse.swift */; };
+		600E11FC1C6CC7EE0047AC8A /* OrderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600E11FB1C6CC7EE0047AC8A /* OrderListViewController.swift */; };
+		600E14B61D49281600475BA1 /* CompanyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600E14B51D49281600475BA1 /* CompanyDetailsViewController.swift */; };
+		6016A09A1C15AF77006C6355 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6016A0991C15AF77006C6355 /* ProductsViewController.swift */; };
+		601A0DEA1C3CFE3800C04B6A /* OrderConfirmCancelRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A0DE91C3CFE3800C04B6A /* OrderConfirmCancelRequest.swift */; };
+		601BD3A21C1ED95D0032E80C /* OrdersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601BD3A11C1ED95D0032E80C /* OrdersDataManager.swift */; };
+		601E56AA1D64C15200152A34 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601E56A91D64C15200152A34 /* ProductDetailsViewController.swift */; };
+		602297431CE38C3C00846516 /* CartViewControllerFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602297421CE38C3C00846516 /* CartViewControllerFooterView.xib */; };
+		6029A29D1C9D6225005C4B47 /* ApplicationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6029A29C1C9D6225005C4B47 /* ApplicationSettings.swift */; };
+		603A0E891C21C785009FC250 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A0E881C21C785009FC250 /* MainViewController.swift */; };
+		603A33461CA788FB00DE151D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 603A33451CA788FB00DE151D /* Extensions.swift */; };
+		604664C51D4E4D9F00843ABF /* ResendOTPRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604664C41D4E4D9F00843ABF /* ResendOTPRequestResponse.swift */; };
+		6046CD391CCE0FA300F9B012 /* dropdownarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 6046CD381CCE0FA300F9B012 /* dropdownarrow.png */; };
+		6059E91D1CB649860009F915 /* Touch2BuyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6059E91C1CB649860009F915 /* Touch2BuyUITests.swift */; };
+		6059E92B1CB649B90009F915 /* Touch2BuyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6059E92A1CB649B90009F915 /* Touch2BuyTests.swift */; };
+		60618F211C969B2F0092EE06 /* spn_gen_default.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 60618F201C969B2F0092EE06 /* spn_gen_default.9.png */; };
+		60618F231C96A05B0092EE06 /* splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 60618F221C96A05B0092EE06 /* splash.jpg */; };
+		606306841CCDE2340080C296 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = 606306831CCDE2340080C296 /* cart.png */; };
+		60677ED41D1D9759006EEAE9 /* StatisticsOrgViewRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60677ED31D1D9759006EEAE9 /* StatisticsOrgViewRequestResponse.swift */; };
+		60677ED61D1D98C7006EEAE9 /* StatServiceDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60677ED51D1D98C7006EEAE9 /* StatServiceDataManager.swift */; };
+		60677ED81D1D9CD2006EEAE9 /* PriceCalculateRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60677ED71D1D9CD2006EEAE9 /* PriceCalculateRequestResponse.swift */; };
+		6074B89D1C25E5D000074313 /* BranchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6074B89C1C25E5D000074313 /* BranchesViewController.swift */; };
+		6075C8001C6F982300247042 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075C7FF1C6F982300247042 /* Order.swift */; };
+		6076EE461C4424FB00E7E218 /* CustomSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6076EE451C4424FB00E7E218 /* CustomSegues.swift */; };
+		607B40281CA7990A0098242D /* VerifyOTPRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607B40271CA7990A0098242D /* VerifyOTPRequestResponse.swift */; };
+		607B402A1CA7B5D80098242D /* CitiesRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607B40291CA7B5D80098242D /* CitiesRequestResponse.swift */; };
+		607DAEAF1D52596B00EDFA3E /* CODE2000.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 607DAEAE1D52596B00EDFA3E /* CODE2000.TTF */; };
+		60893CED1D5CA9ED00C50819 /* PurchaseViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60893CEC1D5CA9ED00C50819 /* PurchaseViewController5.swift */; };
+		608A4C0F1C33B37500A1827E /* DropDownControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608A4C0E1C33B37500A1827E /* DropDownControls.swift */; };
+		6092EA771CCA30CE002045AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6092EA761CCA30CE002045AC /* GoogleService-Info.plist */; };
+		609325081CEF73D9008F8F77 /* DeliveryChargeRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609325071CEF73D9008F8F77 /* DeliveryChargeRequestResponse.swift */; };
+		609789DD1C80A7E60086F6BE /* PurchaseViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609789DC1C80A7E60086F6BE /* PurchaseViewController2.swift */; };
+		609C990D1C747B1000422DA2 /* ShopingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609C990C1C747B1000422DA2 /* ShopingCart.swift */; };
+		60A22D4A1CB0D68B0048FBB3 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A22D491CB0D68B0048FBB3 /* OrderConfirmationViewController.swift */; };
+		60A73B961D1D2918009BCD73 /* OrganizationItemsCategoriesRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A73B951D1D2918009BCD73 /* OrganizationItemsCategoriesRequestResponse.swift */; };
+		60A73B981D1D2E31009BCD73 /* OrganizationItemsByPublishedCategoriesRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A73B971D1D2E31009BCD73 /* OrganizationItemsByPublishedCategoriesRequestResponse.swift */; };
+		60AD0DDB1C16C53100098997 /* ProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD0DDA1C16C53100098997 /* ProductItem.swift */; };
+		60AD0DDF1C16FB0800098997 /* OrganizationBranchesRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AD0DDE1C16FB0800098997 /* OrganizationBranchesRequestResponse.swift */; };
+		60ADF03C1C0E10D20048E3C6 /* ApplicationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60ADF03B1C0E10D20048E3C6 /* ApplicationSession.swift */; };
+		60AEEA041CCB4E7E005CB46F /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA001CCB4E7E005CB46F /* OpenSans-Bold.ttf */; };
+		60AEEA051CCB4E7E005CB46F /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA011CCB4E7E005CB46F /* OpenSans-Italic.ttf */; };
+		60AEEA061CCB4E7E005CB46F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA021CCB4E7E005CB46F /* OpenSans-Regular.ttf */; };
+		60AEEA071CCB4E7E005CB46F /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA031CCB4E7E005CB46F /* OpenSans-Semibold.ttf */; };
+		60AEEA091CCB66CC005CB46F /* companyinfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA081CCB66CC005CB46F /* companyinfo.png */; };
+		60AEEA0B1CCB74E9005CB46F /* companycellbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA0A1CCB74E9005CB46F /* companycellbackground.png */; };
+		60AEEA0E1CCB7F1E005CB46F /* topbarlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA0C1CCB7F1E005CB46F /* topbarlogo.png */; };
+		60AEEA0F1CCB7F1E005CB46F /* topmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 60AEEA0D1CCB7F1E005CB46F /* topmenu.png */; };
+		60AF83411D4684AF00CE5638 /* SCAlertViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AF83401D4684AF00CE5638 /* SCAlertViewExtensions.swift */; };
+		60B8BC8F1C5FB4C100A14CB3 /* CollapsibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8BC8E1C5FB4C100A14CB3 /* CollapsibleView.swift */; };
+		60B8BC911C5FB51A00A14CB3 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B8BC901C5FB51A00A14CB3 /* CartViewController.swift */; };
+		60BA903D1CCD1945000BDC10 /* LoginBackground640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 60BA903B1CCD1945000BDC10 /* LoginBackground640x1136.png */; };
+		60BA903E1CCD1945000BDC10 /* LoginBackground640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 60BA903C1CCD1945000BDC10 /* LoginBackground640x960.png */; };
+		60BF9C2E1CEDD26100B56D9A /* SaveAddressRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BF9C2D1CEDD26100B56D9A /* SaveAddressRequestResponse.swift */; };
+		60C48FAF1C986A6A00D415CA /* FormSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C48FAE1C986A6A00D415CA /* FormSheetViewController.swift */; };
+		60C48FB11C98703C00D415CA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C48FB01C98703C00D415CA /* SignupViewController.swift */; };
+		60CC893D1C7F62810043F76A /* CollapseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC893B1C7F62810043F76A /* CollapseView.swift */; };
+		60CC893E1C7F62810043F76A /* CollapseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60CC893C1C7F62810043F76A /* CollapseView.xib */; };
+		60CCB8F41C1FE04000228DE0 /* OrderRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CCB8F31C1FE04000228DE0 /* OrderRequestResponse.swift */; };
+		60D1AD2A1CACF4EA005A6DC5 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D1AD291CACF4EA005A6DC5 /* Logging.swift */; };
+		60D776551C81AD33006542B3 /* DeliveryOptionsRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D776541C81AD33006542B3 /* DeliveryOptionsRequestResponse.swift */; };
+		60D836FD1C6206C20064C94C /* DefaultControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D836FC1C6206C20064C94C /* DefaultControls.swift */; };
+		60D9C7BE1D6DF65B00F28323 /* CenturyGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60D9C7BD1D6DF65B00F28323 /* CenturyGothic.ttf */; };
+		60D9C7C01D6E054D00F28323 /* T2BLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 60D9C7BF1D6E054D00F28323 /* T2BLogo.png */; };
+		60F0E49F1CD915A8009FE758 /* CountriesRequestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F0E49E1CD915A8009FE758 /* CountriesRequestResponse.swift */; };
+		60FCA06B1C874B6F007C1881 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FCA0691C874B6F007C1881 /* DatePickerViewController.swift */; };
+		60FCA06C1C874B6F007C1881 /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60FCA06A1C874B6F007C1881 /* DatePickerViewController.xib */; };
+		60FE32941BF9F4FF0005B1AF /* WebConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FE32931BF9F4FF0005B1AF /* WebConnectionManager.swift */; };
+		60FFE5301D734A9000B9543D /* gothicb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6061F4921D6F53B900392458 /* gothicb.ttf */; };
+		87B3FE7CCDE4A91B72AB5938 /* Pods_Touch2BuyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F4D4B916D04C059EC2226 /* Pods_Touch2BuyUITests.framework */; };
+		A211379996AD3F5D0CCD18D7 /* Pods_Touch2BuyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B3D8559785D875FA5BC8EED /* Pods_Touch2BuyTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6059E91F1CB649860009F915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5275696F1BEF8C870049C88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 527569761BEF8C880049C88A;
+			remoteInfo = Touch2Buy;
+		};
+		6059E92D1CB649B90009F915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5275696F1BEF8C870049C88A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 527569761BEF8C880049C88A;
+			remoteInfo = Touch2Buy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		600BDC5E1C1945F2008EDDC4 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37EDD44764EDBAEEB0FDA00C /* Pods-Touch2BuyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Touch2BuyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Touch2BuyTests/Pods-Touch2BuyTests.release.xcconfig"; sourceTree = "<group>"; };
+		45A1CD6DCDB8AF99AD038202 /* Pods-Touch2BuyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Touch2BuyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Touch2BuyUITests/Pods-Touch2BuyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5265AD6D1C0575F50035BA0D /* BaseRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequestResponse.swift; sourceTree = "<group>"; };
+		5265AD6F1C057EC50035BA0D /* UserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		5265AD711C057EEA0035BA0D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5265AD731C058AB60035BA0D /* UserLoginRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginRequestResponse.swift; sourceTree = "<group>"; };
+		5265AD781C05B3C20035BA0D /* JSONConvertor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONConvertor.swift; sourceTree = "<group>"; };
+		5265AD7C1C05B9FA0035BA0D /* CreateUserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
+		5265AD7E1C061EFE0035BA0D /* AllOrganizationsRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllOrganizationsRequestResponse.swift; sourceTree = "<group>"; };
+		5265AD801C061FFB0035BA0D /* OrganizationDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = OrganizationDataManager.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5265AD821C0620570035BA0D /* CompaniesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesViewController.swift; sourceTree = "<group>"; };
+		527569771BEF8C880049C88A /* Touch2Buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touch2Buy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5275697B1BEF8C880049C88A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5275697C1BEF8C880049C88A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		527569811BEF8C880049C88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		527569831BEF8C880049C88A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		527569861BEF8C880049C88A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5275699F1BEF94770049C88A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		527569A11BEF96800049C88A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		527569AA1BEFB31D0049C88A /* BaseDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDataManager.swift; sourceTree = "<group>"; };
+		527569AB1BEFB31D0049C88A /* UserDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataManager.swift; sourceTree = "<group>"; };
+		52D2ACD71C07547700413DBE /* OrganizationItemsRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationItemsRequestResponse.swift; sourceTree = "<group>"; };
+		52D2ACD91C07609300413DBE /* Organization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Organization.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		52D2ACDB1C0761DF00413DBE /* ImageItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		56C5A1E0E799466816077641 /* Pods-Touch2BuyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Touch2BuyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Touch2BuyTests/Pods-Touch2BuyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6000D62F1C80CBF2007DD089 /* PurchaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		6000D6381C80CE54007DD089 /* PurchaseViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController4.swift; sourceTree = "<group>"; };
+		6000D63A1C80DDB8007DD089 /* PublicDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicDataManager.swift; sourceTree = "<group>"; };
+		6000D63C1C80DE59007DD089 /* PaymentMethodsRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentMethodsRequestResponse.swift; sourceTree = "<group>"; };
+		600484BD1CD77BF90060DE1C /* addItem_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addItem_active.png; sourceTree = "<group>"; };
+		600484BE1CD77BF90060DE1C /* addItem_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addItem_disabled.png; sourceTree = "<group>"; };
+		6007D3841D5A37AF00FEE3EC /* AreasRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreasRequestResponse.swift; sourceTree = "<group>"; };
+		600E11F21C6C8DA50047AC8A /* OrderListRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListRequestResponse.swift; sourceTree = "<group>"; };
+		600E11FB1C6CC7EE0047AC8A /* OrderListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderListViewController.swift; sourceTree = "<group>"; };
+		600E14B51D49281600475BA1 /* CompanyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyDetailsViewController.swift; sourceTree = "<group>"; };
+		6016A0991C15AF77006C6355 /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		601A0DE91C3CFE3800C04B6A /* OrderConfirmCancelRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmCancelRequest.swift; sourceTree = "<group>"; };
+		601BD3A11C1ED95D0032E80C /* OrdersDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersDataManager.swift; sourceTree = "<group>"; };
+		601E56A91D64C15200152A34 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		602297421CE38C3C00846516 /* CartViewControllerFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CartViewControllerFooterView.xib; sourceTree = "<group>"; };
+		6029A29C1C9D6225005C4B47 /* ApplicationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationSettings.swift; sourceTree = "<group>"; };
+		603A0E881C21C785009FC250 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		603A33451CA788FB00DE151D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		604664C41D4E4D9F00843ABF /* ResendOTPRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResendOTPRequestResponse.swift; sourceTree = "<group>"; };
+		6046CD381CCE0FA300F9B012 /* dropdownarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdownarrow.png; sourceTree = "<group>"; };
+		6059E91A1CB649850009F915 /* Touch2BuyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Touch2BuyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6059E91C1CB649860009F915 /* Touch2BuyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch2BuyUITests.swift; sourceTree = "<group>"; };
+		6059E91E1CB649860009F915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6059E9281CB649B90009F915 /* Touch2BuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Touch2BuyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6059E92A1CB649B90009F915 /* Touch2BuyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touch2BuyTests.swift; sourceTree = "<group>"; };
+		6059E92C1CB649B90009F915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60618F201C969B2F0092EE06 /* spn_gen_default.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spn_gen_default.9.png; sourceTree = "<group>"; };
+		60618F221C96A05B0092EE06 /* splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = splash.jpg; sourceTree = "<group>"; };
+		6061F4921D6F53B900392458 /* gothicb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gothicb.ttf; sourceTree = "<group>"; };
+		606306831CCDE2340080C296 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		60677ED31D1D9759006EEAE9 /* StatisticsOrgViewRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsOrgViewRequestResponse.swift; sourceTree = "<group>"; };
+		60677ED51D1D98C7006EEAE9 /* StatServiceDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatServiceDataManager.swift; sourceTree = "<group>"; };
+		60677ED71D1D9CD2006EEAE9 /* PriceCalculateRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalculateRequestResponse.swift; sourceTree = "<group>"; };
+		6074B89C1C25E5D000074313 /* BranchesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchesViewController.swift; sourceTree = "<group>"; };
+		6075C7FC1C6F724E00247042 /* LigatureSymbols-2.11.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LigatureSymbols-2.11.ttf"; sourceTree = "<group>"; };
+		6075C7FF1C6F982300247042 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		6076EE451C4424FB00E7E218 /* CustomSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSegues.swift; sourceTree = "<group>"; };
+		607B40271CA7990A0098242D /* VerifyOTPRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyOTPRequestResponse.swift; sourceTree = "<group>"; };
+		607B40291CA7B5D80098242D /* CitiesRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiesRequestResponse.swift; sourceTree = "<group>"; };
+		607DAEAE1D52596B00EDFA3E /* CODE2000.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = CODE2000.TTF; sourceTree = "<group>"; };
+		60893CEC1D5CA9ED00C50819 /* PurchaseViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController5.swift; sourceTree = "<group>"; };
+		608A4C0E1C33B37500A1827E /* DropDownControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropDownControls.swift; sourceTree = "<group>"; };
+		6092EA761CCA30CE002045AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		609325071CEF73D9008F8F77 /* DeliveryChargeRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryChargeRequestResponse.swift; sourceTree = "<group>"; };
+		609789DC1C80A7E60086F6BE /* PurchaseViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseViewController2.swift; sourceTree = "<group>"; };
+		609C990C1C747B1000422DA2 /* ShopingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopingCart.swift; sourceTree = "<group>"; };
+		60A22D491CB0D68B0048FBB3 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
+		60A73B951D1D2918009BCD73 /* OrganizationItemsCategoriesRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationItemsCategoriesRequestResponse.swift; sourceTree = "<group>"; };
+		60A73B971D1D2E31009BCD73 /* OrganizationItemsByPublishedCategoriesRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrganizationItemsByPublishedCategoriesRequestResponse.swift; sourceTree = "<group>"; };
+		60AD0DDA1C16C53100098997 /* ProductItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductItem.swift; sourceTree = "<group>"; };
+		60AD0DDE1C16FB0800098997 /* OrganizationBranchesRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = OrganizationBranchesRequestResponse.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		60ADF03B1C0E10D20048E3C6 /* ApplicationSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationSession.swift; sourceTree = "<group>"; };
+		60AEEA001CCB4E7E005CB46F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		60AEEA011CCB4E7E005CB46F /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		60AEEA021CCB4E7E005CB46F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		60AEEA031CCB4E7E005CB46F /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		60AEEA081CCB66CC005CB46F /* companyinfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = companyinfo.png; path = Touch2Buy/Resources/companyinfo.png; sourceTree = SOURCE_ROOT; };
+		60AEEA0A1CCB74E9005CB46F /* companycellbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = companycellbackground.png; sourceTree = "<group>"; };
+		60AEEA0C1CCB7F1E005CB46F /* topbarlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbarlogo.png; sourceTree = "<group>"; };
+		60AEEA0D1CCB7F1E005CB46F /* topmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topmenu.png; sourceTree = "<group>"; };
+		60AF83401D4684AF00CE5638 /* SCAlertViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCAlertViewExtensions.swift; sourceTree = "<group>"; };
+		60B8BC8E1C5FB4C100A14CB3 /* CollapsibleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleView.swift; sourceTree = "<group>"; };
+		60B8BC901C5FB51A00A14CB3 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		60BA903B1CCD1945000BDC10 /* LoginBackground640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground640x1136.png; sourceTree = "<group>"; };
+		60BA903C1CCD1945000BDC10 /* LoginBackground640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground640x960.png; sourceTree = "<group>"; };
+		60BF9C2D1CEDD26100B56D9A /* SaveAddressRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAddressRequestResponse.swift; sourceTree = "<group>"; };
+		60C48FAE1C986A6A00D415CA /* FormSheetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormSheetViewController.swift; sourceTree = "<group>"; };
+		60C48FB01C98703C00D415CA /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		60CC893B1C7F62810043F76A /* CollapseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapseView.swift; sourceTree = "<group>"; };
+		60CC893C1C7F62810043F76A /* CollapseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollapseView.xib; sourceTree = "<group>"; };
+		60CCB8F31C1FE04000228DE0 /* OrderRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequestResponse.swift; sourceTree = "<group>"; };
+		60D1AD291CACF4EA005A6DC5 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		60D776541C81AD33006542B3 /* DeliveryOptionsRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeliveryOptionsRequestResponse.swift; sourceTree = "<group>"; };
+		60D836FC1C6206C20064C94C /* DefaultControls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultControls.swift; sourceTree = "<group>"; };
+		60D9C7BD1D6DF65B00F28323 /* CenturyGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CenturyGothic.ttf; sourceTree = "<group>"; };
+		60D9C7BF1D6E054D00F28323 /* T2BLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = T2BLogo.png; sourceTree = "<group>"; };
+		60F0E49E1CD915A8009FE758 /* CountriesRequestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesRequestResponse.swift; sourceTree = "<group>"; };
+		60FCA0691C874B6F007C1881 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		60FCA06A1C874B6F007C1881 /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		60FE32931BF9F4FF0005B1AF /* WebConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebConnectionManager.swift; sourceTree = "<group>"; };
+		6C007675E3A2062574A23A9C /* Pods-Touch2Buy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Touch2Buy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Touch2Buy/Pods-Touch2Buy.debug.xcconfig"; sourceTree = "<group>"; };
+		8A569F3ABA45F2EA5C57E2EE /* Pods-Touch2BuyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Touch2BuyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Touch2BuyUITests/Pods-Touch2BuyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B3D8559785D875FA5BC8EED /* Pods_Touch2BuyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Touch2BuyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92F4D4B916D04C059EC2226 /* Pods_Touch2BuyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Touch2BuyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCECE07D1E404B9C2191F54 /* Pods_Touch2Buy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Touch2Buy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8E9A0B20B96130B196A8683 /* Pods-Touch2Buy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Touch2Buy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Touch2Buy/Pods-Touch2Buy.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		527569741BEF8C880049C88A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E12945D28C875BE13C3B2D /* Pods_Touch2Buy.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6059E9171CB649850009F915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B3FE7CCDE4A91B72AB5938 /* Pods_Touch2BuyUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6059E9251CB649B90009F915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A211379996AD3F5D0CCD18D7 /* Pods_Touch2BuyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		311297C22E47BE4493D61F46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C007675E3A2062574A23A9C /* Pods-Touch2Buy.debug.xcconfig */,
+				F8E9A0B20B96130B196A8683 /* Pods-Touch2Buy.release.xcconfig */,
+				56C5A1E0E799466816077641 /* Pods-Touch2BuyTests.debug.xcconfig */,
+				37EDD44764EDBAEEB0FDA00C /* Pods-Touch2BuyTests.release.xcconfig */,
+				8A569F3ABA45F2EA5C57E2EE /* Pods-Touch2BuyUITests.debug.xcconfig */,
+				45A1CD6DCDB8AF99AD038202 /* Pods-Touch2BuyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5265AD751C05B2B30035BA0D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				60EEDB991C7F521B0064190E /* CollapsibleView */,
+				60FCA0641C874A9F007C1881 /* DateTimePicker */,
+				5265AD781C05B3C20035BA0D /* JSONConvertor.swift */,
+				608A4C0E1C33B37500A1827E /* DropDownControls.swift */,
+				6076EE451C4424FB00E7E218 /* CustomSegues.swift */,
+				60B8BC8E1C5FB4C100A14CB3 /* CollapsibleView.swift */,
+				60D836FC1C6206C20064C94C /* DefaultControls.swift */,
+				6029A29C1C9D6225005C4B47 /* ApplicationSettings.swift */,
+				603A33451CA788FB00DE151D /* Extensions.swift */,
+				60D1AD291CACF4EA005A6DC5 /* Logging.swift */,
+				60AF83401D4684AF00CE5638 /* SCAlertViewExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5275696E1BEF8C870049C88A = {
+			isa = PBXGroup;
+			children = (
+				527569791BEF8C880049C88A /* Touch2Buy */,
+				6059E91B1CB649860009F915 /* Touch2BuyUITests */,
+				6059E9291CB649B90009F915 /* Touch2BuyTests */,
+				527569781BEF8C880049C88A /* Products */,
+				311297C22E47BE4493D61F46 /* Pods */,
+				D0467547852A1227241098EB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		527569781BEF8C880049C88A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				527569771BEF8C880049C88A /* Touch2Buy.app */,
+				6059E91A1CB649850009F915 /* Touch2BuyUITests.xctest */,
+				6059E9281CB649B90009F915 /* Touch2BuyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		527569791BEF8C880049C88A /* Touch2Buy */ = {
+			isa = PBXGroup;
+			children = (
+				5265AD751C05B2B30035BA0D /* Utilities */,
+				527569A81BEFB31D0049C88A /* DataServices */,
+				5275699C1BEF91180049C88A /* ViewControllers */,
+				5275697C1BEF8C880049C88A /* AppDelegate.swift */,
+				527569801BEF8C880049C88A /* Main.storyboard */,
+				527569831BEF8C880049C88A /* Images.xcassets */,
+				527569851BEF8C880049C88A /* LaunchScreen.xib */,
+				6075C7F01C6F6ADC00247042 /* Resources */,
+				5275697A1BEF8C880049C88A /* Supporting Files */,
+			);
+			path = Touch2Buy;
+			sourceTree = "<group>";
+		};
+		5275697A1BEF8C880049C88A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6092EA761CCA30CE002045AC /* GoogleService-Info.plist */,
+				5275697B1BEF8C880049C88A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5275699C1BEF91180049C88A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5275699F1BEF94770049C88A /* LoginViewController.swift */,
+				527569A11BEF96800049C88A /* BaseViewController.swift */,
+				5265AD821C0620570035BA0D /* CompaniesViewController.swift */,
+				6016A0991C15AF77006C6355 /* ProductsViewController.swift */,
+				603A0E881C21C785009FC250 /* MainViewController.swift */,
+				6074B89C1C25E5D000074313 /* BranchesViewController.swift */,
+				606FA1E51CE8E579003953E6 /* CartViewController */,
+				600E11FB1C6CC7EE0047AC8A /* OrderListViewController.swift */,
+				609789DC1C80A7E60086F6BE /* PurchaseViewController2.swift */,
+				6000D62F1C80CBF2007DD089 /* PurchaseViewController.swift */,
+				6000D6381C80CE54007DD089 /* PurchaseViewController4.swift */,
+				60C48FB01C98703C00D415CA /* SignupViewController.swift */,
+				60C48FAE1C986A6A00D415CA /* FormSheetViewController.swift */,
+				60A22D491CB0D68B0048FBB3 /* OrderConfirmationViewController.swift */,
+				600E14B51D49281600475BA1 /* CompanyDetailsViewController.swift */,
+				60893CEC1D5CA9ED00C50819 /* PurchaseViewController5.swift */,
+				601E56A91D64C15200152A34 /* ProductDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		527569A81BEFB31D0049C88A /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				60ADF03A1C0E10BB0048E3C6 /* DataShared */,
+				60FE32921BF9F4D20005B1AF /* DataConnections */,
+				527569A91BEFB31D0049C88A /* DataManagers */,
+				60A7707A1BFB3A800097D69B /* DataModels */,
+				60A7707B1BFB3A800097D69B /* DataRequestsResponses */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+		527569A91BEFB31D0049C88A /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				527569AA1BEFB31D0049C88A /* BaseDataManager.swift */,
+				527569AB1BEFB31D0049C88A /* UserDataManager.swift */,
+				5265AD801C061FFB0035BA0D /* OrganizationDataManager.swift */,
+				601BD3A11C1ED95D0032E80C /* OrdersDataManager.swift */,
+				6000D63A1C80DDB8007DD089 /* PublicDataManager.swift */,
+				60677ED51D1D98C7006EEAE9 /* StatServiceDataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		600484BC1CD77BF90060DE1C /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				600484BD1CD77BF90060DE1C /* addItem_active.png */,
+				600484BE1CD77BF90060DE1C /* addItem_disabled.png */,
+			);
+			path = AddItem;
+			sourceTree = "<group>";
+		};
+		6059E91B1CB649860009F915 /* Touch2BuyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6059E91C1CB649860009F915 /* Touch2BuyUITests.swift */,
+				6059E91E1CB649860009F915 /* Info.plist */,
+			);
+			path = Touch2BuyUITests;
+			sourceTree = "<group>";
+		};
+		6059E9291CB649B90009F915 /* Touch2BuyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6059E92A1CB649B90009F915 /* Touch2BuyTests.swift */,
+				6059E92C1CB649B90009F915 /* Info.plist */,
+			);
+			path = Touch2BuyTests;
+			sourceTree = "<group>";
+		};
+		606FA1E51CE8E579003953E6 /* CartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				60B8BC901C5FB51A00A14CB3 /* CartViewController.swift */,
+				602297421CE38C3C00846516 /* CartViewControllerFooterView.xib */,
+			);
+			name = CartViewController;
+			sourceTree = "<group>";
+		};
+		6075C7F01C6F6ADC00247042 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				600484BC1CD77BF90060DE1C /* AddItem */,
+				606306831CCDE2340080C296 /* cart.png */,
+				60AEEA0A1CCB74E9005CB46F /* companycellbackground.png */,
+				6046CD381CCE0FA300F9B012 /* dropdownarrow.png */,
+				6075C7FC1C6F724E00247042 /* LigatureSymbols-2.11.ttf */,
+				607DAEAE1D52596B00EDFA3E /* CODE2000.TTF */,
+				60BA903A1CCD1945000BDC10 /* LoginBackground */,
+				60AEE9FF1CCB4E7E005CB46F /* OpenSans */,
+				60D9C7BC1D6DF65B00F28323 /* CenturyGothic */,
+				60618F221C96A05B0092EE06 /* splash.jpg */,
+				60618F201C969B2F0092EE06 /* spn_gen_default.9.png */,
+				60AEEA0C1CCB7F1E005CB46F /* topbarlogo.png */,
+				60AEEA0D1CCB7F1E005CB46F /* topmenu.png */,
+				60D9C7BF1D6E054D00F28323 /* T2BLogo.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		60A7707A1BFB3A800097D69B /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				609C990C1C747B1000422DA2 /* ShopingCart.swift */,
+				5265AD711C057EEA0035BA0D /* User.swift */,
+				52D2ACD91C07609300413DBE /* Organization.swift */,
+				52D2ACDB1C0761DF00413DBE /* ImageItem.swift */,
+				60AD0DDA1C16C53100098997 /* ProductItem.swift */,
+				6075C7FF1C6F982300247042 /* Order.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		60A7707B1BFB3A800097D69B /* DataRequestsResponses */ = {
+			isa = PBXGroup;
+			children = (
+				5265AD6D1C0575F50035BA0D /* BaseRequestResponse.swift */,
+				5265AD6F1C057EC50035BA0D /* UserRequest.swift */,
+				5265AD731C058AB60035BA0D /* UserLoginRequestResponse.swift */,
+				5265AD7C1C05B9FA0035BA0D /* CreateUserRequest.swift */,
+				5265AD7E1C061EFE0035BA0D /* AllOrganizationsRequestResponse.swift */,
+				52D2ACD71C07547700413DBE /* OrganizationItemsRequestResponse.swift */,
+				60AD0DDE1C16FB0800098997 /* OrganizationBranchesRequestResponse.swift */,
+				60CCB8F31C1FE04000228DE0 /* OrderRequestResponse.swift */,
+				601A0DE91C3CFE3800C04B6A /* OrderConfirmCancelRequest.swift */,
+				600E11F21C6C8DA50047AC8A /* OrderListRequestResponse.swift */,
+				6000D63C1C80DE59007DD089 /* PaymentMethodsRequestResponse.swift */,
+				60D776541C81AD33006542B3 /* DeliveryOptionsRequestResponse.swift */,
+				607B40271CA7990A0098242D /* VerifyOTPRequestResponse.swift */,
+				607B40291CA7B5D80098242D /* CitiesRequestResponse.swift */,
+				60F0E49E1CD915A8009FE758 /* CountriesRequestResponse.swift */,
+				60BF9C2D1CEDD26100B56D9A /* SaveAddressRequestResponse.swift */,
+				609325071CEF73D9008F8F77 /* DeliveryChargeRequestResponse.swift */,
+				60A73B951D1D2918009BCD73 /* OrganizationItemsCategoriesRequestResponse.swift */,
+				60A73B971D1D2E31009BCD73 /* OrganizationItemsByPublishedCategoriesRequestResponse.swift */,
+				60677ED31D1D9759006EEAE9 /* StatisticsOrgViewRequestResponse.swift */,
+				60677ED71D1D9CD2006EEAE9 /* PriceCalculateRequestResponse.swift */,
+				604664C41D4E4D9F00843ABF /* ResendOTPRequestResponse.swift */,
+				6007D3841D5A37AF00FEE3EC /* AreasRequestResponse.swift */,
+			);
+			path = DataRequestsResponses;
+			sourceTree = "<group>";
+		};
+		60ADF03A1C0E10BB0048E3C6 /* DataShared */ = {
+			isa = PBXGroup;
+			children = (
+				60ADF03B1C0E10D20048E3C6 /* ApplicationSession.swift */,
+			);
+			path = DataShared;
+			sourceTree = "<group>";
+		};
+		60AEE9FF1CCB4E7E005CB46F /* OpenSans */ = {
+			isa = PBXGroup;
+			children = (
+				60AEEA081CCB66CC005CB46F /* companyinfo.png */,
+				60AEEA001CCB4E7E005CB46F /* OpenSans-Bold.ttf */,
+				60AEEA011CCB4E7E005CB46F /* OpenSans-Italic.ttf */,
+				60AEEA021CCB4E7E005CB46F /* OpenSans-Regular.ttf */,
+				60AEEA031CCB4E7E005CB46F /* OpenSans-Semibold.ttf */,
+			);
+			path = OpenSans;
+			sourceTree = "<group>";
+		};
+		60BA903A1CCD1945000BDC10 /* LoginBackground */ = {
+			isa = PBXGroup;
+			children = (
+				60BA903B1CCD1945000BDC10 /* LoginBackground640x1136.png */,
+				60BA903C1CCD1945000BDC10 /* LoginBackground640x960.png */,
+			);
+			path = LoginBackground;
+			sourceTree = "<group>";
+		};
+		60D9C7BC1D6DF65B00F28323 /* CenturyGothic */ = {
+			isa = PBXGroup;
+			children = (
+				6061F4921D6F53B900392458 /* gothicb.ttf */,
+				60D9C7BD1D6DF65B00F28323 /* CenturyGothic.ttf */,
+			);
+			path = CenturyGothic;
+			sourceTree = "<group>";
+		};
+		60EEDB991C7F521B0064190E /* CollapsibleView */ = {
+			isa = PBXGroup;
+			children = (
+				60CC893B1C7F62810043F76A /* CollapseView.swift */,
+				60CC893C1C7F62810043F76A /* CollapseView.xib */,
+			);
+			path = CollapsibleView;
+			sourceTree = "<group>";
+		};
+		60FCA0641C874A9F007C1881 /* DateTimePicker */ = {
+			isa = PBXGroup;
+			children = (
+				60FCA0691C874B6F007C1881 /* DatePickerViewController.swift */,
+				60FCA06A1C874B6F007C1881 /* DatePickerViewController.xib */,
+			);
+			path = DateTimePicker;
+			sourceTree = "<group>";
+		};
+		60FE32921BF9F4D20005B1AF /* DataConnections */ = {
+			isa = PBXGroup;
+			children = (
+				60FE32931BF9F4FF0005B1AF /* WebConnectionManager.swift */,
+			);
+			path = DataConnections;
+			sourceTree = "<group>";
+		};
+		D0467547852A1227241098EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDCECE07D1E404B9C2191F54 /* Pods_Touch2Buy.framework */,
+				8B3D8559785D875FA5BC8EED /* Pods_Touch2BuyTests.framework */,
+				C92F4D4B916D04C059EC2226 /* Pods_Touch2BuyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		527569761BEF8C880049C88A /* Touch2Buy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 527569961BEF8C880049C88A /* Build configuration list for PBXNativeTarget "Touch2Buy" */;
+			buildPhases = (
+				F88ED2B0AE4547CFCE5C21C3 /* Check Pods Manifest.lock */,
+				527569731BEF8C880049C88A /* Sources */,
+				527569741BEF8C880049C88A /* Frameworks */,
+				527569751BEF8C880049C88A /* Resources */,
+				600BDC5E1C1945F2008EDDC4 /* Copy Frameworks */,
+				485651CC6318200B47F5A9BC /* Embed Pods Frameworks */,
+				99F647EB1B360F51BBCCC176 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Touch2Buy;
+			productName = Touch2Buy;
+			productReference = 527569771BEF8C880049C88A /* Touch2Buy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6059E9191CB649850009F915 /* Touch2BuyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6059E9231CB649860009F915 /* Build configuration list for PBXNativeTarget "Touch2BuyUITests" */;
+			buildPhases = (
+				AA61A31C62EE8E0B312CE657 /* Check Pods Manifest.lock */,
+				6059E9161CB649850009F915 /* Sources */,
+				6059E9171CB649850009F915 /* Frameworks */,
+				6059E9181CB649850009F915 /* Resources */,
+				4CE214A40F12F5554FC0B8ED /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6059E9201CB649860009F915 /* PBXTargetDependency */,
+			);
+			name = Touch2BuyUITests;
+			productName = Touch2BuyUITests;
+			productReference = 6059E91A1CB649850009F915 /* Touch2BuyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6059E9271CB649B90009F915 /* Touch2BuyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6059E92F1CB649B90009F915 /* Build configuration list for PBXNativeTarget "Touch2BuyTests" */;
+			buildPhases = (
+				E26FC792E44F67A561E0A7DB /* Check Pods Manifest.lock */,
+				6059E9241CB649B90009F915 /* Sources */,
+				6059E9251CB649B90009F915 /* Frameworks */,
+				6059E9261CB649B90009F915 /* Resources */,
+				7AB92BE9F436FD7A74D027A5 /* Embed Pods Frameworks */,
+				B03B5CD82CCF4D1C03A9EAC1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6059E92E1CB649B90009F915 /* PBXTargetDependency */,
+			);
+			name = Touch2BuyTests;
+			productName = Touch2BuyTests;
+			productReference = 6059E9281CB649B90009F915 /* Touch2BuyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5275696F1BEF8C870049C88A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = TouchBuy;
+				TargetAttributes = {
+					527569761BEF8C880049C88A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6059E9191CB649850009F915 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 527569761BEF8C880049C88A;
+					};
+					6059E9271CB649B90009F915 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 527569761BEF8C880049C88A;
+					};
+				};
+			};
+			buildConfigurationList = 527569721BEF8C870049C88A /* Build configuration list for PBXProject "Touch2Buy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5275696E1BEF8C870049C88A;
+			productRefGroup = 527569781BEF8C880049C88A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				527569761BEF8C880049C88A /* Touch2Buy */,
+				6059E9191CB649850009F915 /* Touch2BuyUITests */,
+				6059E9271CB649B90009F915 /* Touch2BuyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		527569751BEF8C880049C88A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60AEEA071CCB4E7E005CB46F /* OpenSans-Semibold.ttf in Resources */,
+				606306841CCDE2340080C296 /* cart.png in Resources */,
+				60AEEA091CCB66CC005CB46F /* companyinfo.png in Resources */,
+				60618F211C969B2F0092EE06 /* spn_gen_default.9.png in Resources */,
+				600484BF1CD77BF90060DE1C /* addItem_active.png in Resources */,
+				60AEEA061CCB4E7E005CB46F /* OpenSans-Regular.ttf in Resources */,
+				60CC893E1C7F62810043F76A /* CollapseView.xib in Resources */,
+				60AEEA0E1CCB7F1E005CB46F /* topbarlogo.png in Resources */,
+				60AEEA0F1CCB7F1E005CB46F /* topmenu.png in Resources */,
+				6092EA771CCA30CE002045AC /* GoogleService-Info.plist in Resources */,
+				60AEEA051CCB4E7E005CB46F /* OpenSans-Italic.ttf in Resources */,
+				60D9C7C01D6E054D00F28323 /* T2BLogo.png in Resources */,
+				527569821BEF8C880049C88A /* Main.storyboard in Resources */,
+				60FCA06C1C874B6F007C1881 /* DatePickerViewController.xib in Resources */,
+				60FFE5301D734A9000B9543D /* gothicb.ttf in Resources */,
+				607DAEAF1D52596B00EDFA3E /* CODE2000.TTF in Resources */,
+				60BA903D1CCD1945000BDC10 /* LoginBackground640x1136.png in Resources */,
+				600484C01CD77BF90060DE1C /* addItem_disabled.png in Resources */,
+				60AEEA041CCB4E7E005CB46F /* OpenSans-Bold.ttf in Resources */,
+				60BA903E1CCD1945000BDC10 /* LoginBackground640x960.png in Resources */,
+				6046CD391CCE0FA300F9B012 /* dropdownarrow.png in Resources */,
+				602297431CE38C3C00846516 /* CartViewControllerFooterView.xib in Resources */,
+				60618F231C96A05B0092EE06 /* splash.jpg in Resources */,
+				60AEEA0B1CCB74E9005CB46F /* companycellbackground.png in Resources */,
+				60D9C7BE1D6DF65B00F28323 /* CenturyGothic.ttf in Resources */,
+				527569871BEF8C880049C88A /* LaunchScreen.xib in Resources */,
+				527569841BEF8C880049C88A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6059E9181CB649850009F915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6059E9261CB649B90009F915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		485651CC6318200B47F5A9BC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Touch2Buy/Pods-Touch2Buy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CE214A40F12F5554FC0B8ED /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Touch2BuyUITests/Pods-Touch2BuyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB92BE9F436FD7A74D027A5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Touch2BuyTests/Pods-Touch2BuyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99F647EB1B360F51BBCCC176 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Touch2Buy/Pods-Touch2Buy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA61A31C62EE8E0B312CE657 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B03B5CD82CCF4D1C03A9EAC1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Touch2BuyTests/Pods-Touch2BuyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E26FC792E44F67A561E0A7DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F88ED2B0AE4547CFCE5C21C3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		527569731BEF8C880049C88A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6074B89D1C25E5D000074313 /* BranchesViewController.swift in Sources */,
+				607B402A1CA7B5D80098242D /* CitiesRequestResponse.swift in Sources */,
+				609325081CEF73D9008F8F77 /* DeliveryChargeRequestResponse.swift in Sources */,
+				60B8BC8F1C5FB4C100A14CB3 /* CollapsibleView.swift in Sources */,
+				5265AD741C058AB60035BA0D /* UserLoginRequestResponse.swift in Sources */,
+				52D2ACD81C07547700413DBE /* OrganizationItemsRequestResponse.swift in Sources */,
+				601A0DEA1C3CFE3800C04B6A /* OrderConfirmCancelRequest.swift in Sources */,
+				6075C8001C6F982300247042 /* Order.swift in Sources */,
+				60D1AD2A1CACF4EA005A6DC5 /* Logging.swift in Sources */,
+				5265AD6E1C0575F50035BA0D /* BaseRequestResponse.swift in Sources */,
+				5265AD811C061FFB0035BA0D /* OrganizationDataManager.swift in Sources */,
+				60677ED41D1D9759006EEAE9 /* StatisticsOrgViewRequestResponse.swift in Sources */,
+				52D2ACDC1C0761DF00413DBE /* ImageItem.swift in Sources */,
+				609C990D1C747B1000422DA2 /* ShopingCart.swift in Sources */,
+				527569AC1BEFB31D0049C88A /* BaseDataManager.swift in Sources */,
+				607B40281CA7990A0098242D /* VerifyOTPRequestResponse.swift in Sources */,
+				603A0E891C21C785009FC250 /* MainViewController.swift in Sources */,
+				60D836FD1C6206C20064C94C /* DefaultControls.swift in Sources */,
+				608A4C0F1C33B37500A1827E /* DropDownControls.swift in Sources */,
+				60AF83411D4684AF00CE5638 /* SCAlertViewExtensions.swift in Sources */,
+				5265AD701C057EC50035BA0D /* UserRequest.swift in Sources */,
+				60A22D4A1CB0D68B0048FBB3 /* OrderConfirmationViewController.swift in Sources */,
+				6000D6391C80CE54007DD089 /* PurchaseViewController4.swift in Sources */,
+				60B8BC911C5FB51A00A14CB3 /* CartViewController.swift in Sources */,
+				527569A01BEF94770049C88A /* LoginViewController.swift in Sources */,
+				6007D3851D5A37AF00FEE3EC /* AreasRequestResponse.swift in Sources */,
+				60BF9C2E1CEDD26100B56D9A /* SaveAddressRequestResponse.swift in Sources */,
+				60ADF03C1C0E10D20048E3C6 /* ApplicationSession.swift in Sources */,
+				60FE32941BF9F4FF0005B1AF /* WebConnectionManager.swift in Sources */,
+				60C48FB11C98703C00D415CA /* SignupViewController.swift in Sources */,
+				5265AD7D1C05B9FA0035BA0D /* CreateUserRequest.swift in Sources */,
+				5265AD791C05B3C20035BA0D /* JSONConvertor.swift in Sources */,
+				60F0E49F1CD915A8009FE758 /* CountriesRequestResponse.swift in Sources */,
+				60AD0DDB1C16C53100098997 /* ProductItem.swift in Sources */,
+				6000D63B1C80DDB8007DD089 /* PublicDataManager.swift in Sources */,
+				604664C51D4E4D9F00843ABF /* ResendOTPRequestResponse.swift in Sources */,
+				527569AD1BEFB31D0049C88A /* UserDataManager.swift in Sources */,
+				60FCA06B1C874B6F007C1881 /* DatePickerViewController.swift in Sources */,
+				600E11FC1C6CC7EE0047AC8A /* OrderListViewController.swift in Sources */,
+				60C48FAF1C986A6A00D415CA /* FormSheetViewController.swift in Sources */,
+				6076EE461C4424FB00E7E218 /* CustomSegues.swift in Sources */,
+				6016A09A1C15AF77006C6355 /* ProductsViewController.swift in Sources */,
+				60677ED81D1D9CD2006EEAE9 /* PriceCalculateRequestResponse.swift in Sources */,
+				60AD0DDF1C16FB0800098997 /* OrganizationBranchesRequestResponse.swift in Sources */,
+				5275697D1BEF8C880049C88A /* AppDelegate.swift in Sources */,
+				60A73B961D1D2918009BCD73 /* OrganizationItemsCategoriesRequestResponse.swift in Sources */,
+				60D776551C81AD33006542B3 /* DeliveryOptionsRequestResponse.swift in Sources */,
+				601BD3A21C1ED95D0032E80C /* OrdersDataManager.swift in Sources */,
+				600E11F31C6C8DA50047AC8A /* OrderListRequestResponse.swift in Sources */,
+				60CCB8F41C1FE04000228DE0 /* OrderRequestResponse.swift in Sources */,
+				60893CED1D5CA9ED00C50819 /* PurchaseViewController5.swift in Sources */,
+				5265AD721C057EEA0035BA0D /* User.swift in Sources */,
+				5265AD831C0620570035BA0D /* CompaniesViewController.swift in Sources */,
+				6000D63D1C80DE59007DD089 /* PaymentMethodsRequestResponse.swift in Sources */,
+				600E14B61D49281600475BA1 /* CompanyDetailsViewController.swift in Sources */,
+				52D2ACDA1C07609300413DBE /* Organization.swift in Sources */,
+				527569A21BEF96800049C88A /* BaseViewController.swift in Sources */,
+				601E56AA1D64C15200152A34 /* ProductDetailsViewController.swift in Sources */,
+				60677ED61D1D98C7006EEAE9 /* StatServiceDataManager.swift in Sources */,
+				60A73B981D1D2E31009BCD73 /* OrganizationItemsByPublishedCategoriesRequestResponse.swift in Sources */,
+				6000D6301C80CBF2007DD089 /* PurchaseViewController.swift in Sources */,
+				609789DD1C80A7E60086F6BE /* PurchaseViewController2.swift in Sources */,
+				60CC893D1C7F62810043F76A /* CollapseView.swift in Sources */,
+				6029A29D1C9D6225005C4B47 /* ApplicationSettings.swift in Sources */,
+				603A33461CA788FB00DE151D /* Extensions.swift in Sources */,
+				5265AD7F1C061EFE0035BA0D /* AllOrganizationsRequestResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6059E9161CB649850009F915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6059E91D1CB649860009F915 /* Touch2BuyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6059E9241CB649B90009F915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6059E92B1CB649B90009F915 /* Touch2BuyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6059E9201CB649860009F915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 527569761BEF8C880049C88A /* Touch2Buy */;
+			targetProxy = 6059E91F1CB649860009F915 /* PBXContainerItemProxy */;
+		};
+		6059E92E1CB649B90009F915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 527569761BEF8C880049C88A /* Touch2Buy */;
+			targetProxy = 6059E92D1CB649B90009F915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		527569801BEF8C880049C88A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				527569811BEF8C880049C88A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		527569851BEF8C880049C88A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				527569861BEF8C880049C88A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		527569941BEF8C880049C88A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		527569951BEF8C880049C88A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		527569971BEF8C880049C88A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C007675E3A2062574A23A9C /* Pods-Touch2Buy.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dharmendra Attanayake (2X2BL7USTR)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dharmendra Attanayake (2X2BL7USTR)";
+				INFOPLIST_FILE = Touch2Buy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.touch2buy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3fb2ae7e-d21a-44a3-9dbe-2e9ca80fb055";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		527569981BEF8C880049C88A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8E9A0B20B96130B196A8683 /* Pods-Touch2Buy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mutants International Private Limited (SXC5WXXEWB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mutants International Private Limited (SXC5WXXEWB)";
+				INFOPLIST_FILE = Touch2Buy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.touch2buy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "acded022-565e-49f7-a5c8-d1e9b36c9690";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		603EF3351CFEAE7F006F221F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		603EF3361CFEAE7F006F221F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8E9A0B20B96130B196A8683 /* Pods-Touch2Buy.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mutants International Private Limited (SXC5WXXEWB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mutants International Private Limited (SXC5WXXEWB)";
+				INFOPLIST_FILE = Touch2Buy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.touch2buy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "630e8577-2710-4e48-8220-94500723e2df";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Distribution;
+		};
+		603EF3371CFEAE7F006F221F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A1CD6DCDB8AF99AD038202 /* Pods-Touch2BuyUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = Touch2BuyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.Touch2BuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "630e8577-2710-4e48-8220-94500723e2df";
+				TEST_TARGET_NAME = Touch2Buy;
+			};
+			name = Distribution;
+		};
+		603EF3381CFEAE7F006F221F /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EDD44764EDBAEEB0FDA00C /* Pods-Touch2BuyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = Touch2BuyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.Touch2BuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Touch2Buy.app/Touch2Buy";
+			};
+			name = Distribution;
+		};
+		6059E9211CB649860009F915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A569F3ABA45F2EA5C57E2EE /* Pods-Touch2BuyUITests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = Touch2BuyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.Touch2BuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "630e8577-2710-4e48-8220-94500723e2df";
+				TEST_TARGET_NAME = Touch2Buy;
+			};
+			name = Debug;
+		};
+		6059E9221CB649860009F915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A1CD6DCDB8AF99AD038202 /* Pods-Touch2BuyUITests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = Touch2BuyUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.Touch2BuyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "630e8577-2710-4e48-8220-94500723e2df";
+				TEST_TARGET_NAME = Touch2Buy;
+			};
+			name = Release;
+		};
+		6059E9301CB649B90009F915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C5A1E0E799466816077641 /* Pods-Touch2BuyTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = Touch2BuyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.Touch2BuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Touch2Buy.app/Touch2Buy";
+			};
+			name = Debug;
+		};
+		6059E9311CB649B90009F915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37EDD44764EDBAEEB0FDA00C /* Pods-Touch2BuyTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = Touch2BuyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mutants.Touch2BuyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Touch2Buy.app/Touch2Buy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		527569721BEF8C870049C88A /* Build configuration list for PBXProject "Touch2Buy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527569941BEF8C880049C88A /* Debug */,
+				527569951BEF8C880049C88A /* Release */,
+				603EF3351CFEAE7F006F221F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		527569961BEF8C880049C88A /* Build configuration list for PBXNativeTarget "Touch2Buy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				527569971BEF8C880049C88A /* Debug */,
+				527569981BEF8C880049C88A /* Release */,
+				603EF3361CFEAE7F006F221F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6059E9231CB649860009F915 /* Build configuration list for PBXNativeTarget "Touch2BuyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6059E9211CB649860009F915 /* Debug */,
+				6059E9221CB649860009F915 /* Release */,
+				603EF3371CFEAE7F006F221F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6059E92F1CB649B90009F915 /* Build configuration list for PBXNativeTarget "Touch2BuyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6059E9301CB649B90009F915 /* Debug */,
+				6059E9311CB649B90009F915 /* Release */,
+				603EF3381CFEAE7F006F221F /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5275696F1BEF8C870049C88A /* Project object */;
+}

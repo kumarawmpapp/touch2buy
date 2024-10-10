@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="CenturyGothic.ttf">
+            <string>CenturyGothic</string>
+            <string>CenturyGothic</string>
+            <string>CenturyGothic</string>
+            <string>CenturyGothic</string>
+            <string>CenturyGothic</string>
+            <string>CenturyGothic</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CartItemFooterView" customModule="Touch2Buy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r49-qJ-dAK">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rs. 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVD-PQ-LoK" userLabel="discountvalue">
+                            <rect key="frame" x="519" y="25" width="63" height="21"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                            <color key="textColor" red="0.019607843831181526" green="0.36078432202339172" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Net Total" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sM9-7Q-G4A" userLabel="nettotalname">
+                            <rect key="frame" x="18" y="46" width="63" height="21"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                            <color key="textColor" red="0.019607843831181526" green="0.36078432202339172" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Sub Total" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2W-8u-KTp" userLabel="subtotalname">
+                            <rect key="frame" x="18" y="3" width="65" height="21"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                            <color key="textColor" red="0.019607843831181526" green="0.36078432202339172" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" fixedFrame="YES" text="Total Discount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbe-cB-VAs" userLabel="discountname">
+                            <rect key="frame" x="18" y="25" width="100" height="21"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                            <color key="textColor" red="0.019607843831181526" green="0.36078432202339172" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rs. 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dOt-fH-9H6" userLabel="subtotalvalue">
+                            <rect key="frame" x="519" y="3" width="63" height="21"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                            <color key="textColor" red="0.019607843831181526" green="0.36078432202339172" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rs. 0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKl-vC-KLG" userLabel="nettotalvalue">
+                            <rect key="frame" x="519" y="46" width="63" height="21"/>
+                            <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="14"/>
+                            <color key="textColor" red="0.019607843831181526" green="0.36078432202339172" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="16L-qT-ljT"/>
+                        <constraint firstItem="dOt-fH-9H6" firstAttribute="trailing" secondItem="r49-qJ-dAK" secondAttribute="trailing" constant="-10" id="CTg-jL-rvs"/>
+                        <constraint firstItem="LKl-vC-KLG" firstAttribute="trailing" secondItem="dOt-fH-9H6" secondAttribute="trailing" id="rDI-y1-b1w"/>
+                        <constraint firstItem="fVD-PQ-LoK" firstAttribute="trailing" secondItem="dOt-fH-9H6" secondAttribute="trailing" id="wCn-w1-rff"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="r49-qJ-dAK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CQ3-pY-Nfp"/>
+                <constraint firstItem="r49-qJ-dAK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EQp-DY-Cqn"/>
+                <constraint firstAttribute="trailing" secondItem="r49-qJ-dAK" secondAttribute="trailing" id="fOy-vl-xJ1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="netTotal" destination="LKl-vC-KLG" id="28q-ha-OY3"/>
+                <outlet property="subTotal" destination="dOt-fH-9H6" id="hEc-TQ-qVI"/>
+                <outlet property="totalDiscount" destination="fVD-PQ-LoK" id="F0u-eO-s6K"/>
+            </connections>
+            <point key="canvasLocation" x="323" y="171.5"/>
+        </view>
+    </objects>
+</document>
